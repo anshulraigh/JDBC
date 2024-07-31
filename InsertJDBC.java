@@ -21,8 +21,8 @@ public class InsertJDBC {
                 System.out.println("Table created in database..");
             }
 
-        } catch (Exception e) {
-
+        } catch (ClassNotFoundException | SQLException e) {
+            System.out.println(e);
         }
 
     }
