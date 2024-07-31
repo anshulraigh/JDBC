@@ -16,6 +16,8 @@ class DatabaseConnection{
             }else{
                 System.out.println("Connection Created....");
             }
+
+            con.close(); 
         }catch(Exception e){
             e.printStackTrace();
         }
